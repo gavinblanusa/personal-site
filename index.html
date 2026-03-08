@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavin Blanusa - The Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cinematic Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Parallax Altitude Backgrounds (Populated via JS) -->
+    <div id="bg-manager">
+        <div class="bg-layer active" id="bg-valley"></div>
+        <div class="bg-layer" id="bg-ascent"></div>
+        <div class="bg-layer" id="bg-clouds"></div>
+        <div class="bg-layer" id="bg-peak"></div>
+    </div>
+    
+    <!-- Hero Particle Canvas -->
+    <canvas id="hero-particles"></canvas>
+    
+    <div class="scroll-fade-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content reveal-on-load">
+            <h1>Gavin Blanusa</h1>
+            <p class="subtitle">Data Science | Economics | AI | Venture Capital</p>
+            <p class="bio">A highly driven and analytical professional seeking exponential growth and new opportunities in Data and AI.</p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Begin the Journey</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Journey -->
+    <section class="journey-section">
+        <div class="container">
+            <div class="timeline">
+                <div class="timeline-progress" id="timeline-progress"></div>
+
+                <!-- Phase 1: The Foundation -->
+                <!-- Node 1: Education (Left) -->
+                <div class="timeline-container left reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Education</h2>
+                        <div class="job">
+                            <h3>B.S. Economics & Data Science - UT Dallas</h3>
+                            <p class="date">Graduating May 2026</p>
+                            <p>Developing a strong analytical foundation with a 3.97 GPA. Heavily emphasizing coursework in Macro- and Micro-Economic Theory, Financial Accounting, Econometrics, Linear Algebra, and Vector Calculus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 2: Certifications (Right) -->
+                <div class="timeline-container right reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Certifications</h2>
+                        <div class="job">
+                            <h3>Licenses & Certifications</h3>
+                            <ul class="skills-list">
+                                <li>Securities Industry Essentials (SIE)</li>
+                                <li>Tableau Certified Data Analyst</li>
+                                <li>Google Data Analytics (R)</li>
+                                <li>Python for Data Science & ML</li>
+                                <li>LLM Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 3: Transformative Books (Left) -->
+                <div class="timeline-container left reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Transformative Books</h2>
+                        <ul class="project-list" style="margin-top: 1rem;">
+                            <li><strong>The Beginning of Infinity</strong> by David Deutsch</li>
+                            <li><strong>Atomic Habits</strong> by James Clear</li>
+                            <li><strong>The Black Swan</strong> by Nassim Taleb</li>
+                            <li><strong>Man's Search for Meaning</strong> by Viktor Frankl</li>
+                            <li><strong>The Drunkard's Walk</strong> by Leonard Mlodinow</li>
+                            <li><strong>Poor Charlie's Almanack</strong> by Charles T. Munger</li>
+                            <li><strong>Mastery</strong> by Robert Greene</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 4: Daily Podcasts (Right) -->
+                <div class="timeline-container right reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Daily Podcasts</h2>
+                        <p style="margin-top: 1rem; line-height: 1.8;">
+                            Lex Fridman • Founders • All-In • 20VC • Modern Wisdom • Dwarkesh Podcast • Last Week in AI • Huberman Lab • Invest Like the Best • Tim Ferriss
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Phase 2: Career History -->
+                <!-- Node 5: Nonprofit Founder (Left) -->
+                <div class="timeline-container left reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Nonprofit Founder</h2>
+                        <div class="job">
+                            <h3>SOAR Sonoma</h3>
+                            <p class="date">May 2020 - Sep 2021</p>
+                            <p>Founded a 501(c)(3) organization dedicated to increasing awareness and accessibility for high school students to earn early college credit. Designed the framework, filed government paperwork, and collaborated directly with school boards to promote the program.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 6: Customer Service (Right) -->
+                <div class="timeline-container right reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Foundation in Hospitality</h2>
+                        <div class="job">
+                            <h3>Service Staff @ Michael Mina's Wit & Wisdom</h3>
+                            <p class="date">Summers 2021 - 2023</p>
+                            <p>Hospitality experience in a fast-paced, customer-facing environment at Sonoma's top restaurant. Honed multitasking and teamwork skills, rapidly understanding every role and training new staff.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 7: User Engagement (Left) -->
+                <div class="timeline-container left reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>User Engagement</h2>
+                        <div class="job">
+                            <h3>Intern @ Locker</h3>
+                            <p class="date">Sep 2023 - Feb 2024</p>
+                            <p>Operated at the intersection of product and the user base for an early-stage sports betting startup. Specialized in managing user relationships, gathering critical beta feedback, and translating user needs into actionable insights to optimize the platform experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 8: Data Science (Right) -->
+                <div class="timeline-container right reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Scaling Data & AI</h2>
+                        <div class="job">
+                            <h3>Data Science Intern @ Cruiter.AI</h3>
+                            <p class="date">May 2024 - Dec 2024</p>
+                            <p>Worked directly alongside the Founder to analyze and leverage massive proprietary databases for technical sourcing. Spearheaded the integration of large language models, natural language processing, and personalized communication algorithms to drive engagement and optimize business operations at scale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 9: Analyst (Left) -->
+                <div class="timeline-container left reveal">
+                    <div class="timeline-content glow-card">
+                        <h2>Venture Capital & AI</h2>
+                        <div class="job">
+                            <h3>Analyst Intern @ TRAC VC/AI</h3>
+                            <p class="date">May 2025 - Present</p>
+                            <p>Executing high-level market research and competitive analysis within the broader VC ecosystem. Assisting the general partners with fundraising support, developing algorithmic momentum measurements for private companies, and actively deploying complex, open-source agentic workflows for internal analysis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3: Projects & CTAs -->
+                <!-- Node 10: Technical Projects (Right) -->
+                <div class="timeline-container right reveal">
+                    <div class="timeline-content glow-card" style="background: rgba(139, 92, 246, 0.05); border-color: rgba(139, 92, 246, 0.2);">
+                        <h2>Projects & Builder's Mindset</h2>
+                        <div style="margin-top: 1.5rem;">
+                            <!-- Project 1 -->
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">AWS AI Workflow</h3>
+                            <p style="margin-bottom: 1rem;">Built an LLM pipeline via Groq for a commercial futures company focused on trading data for commodities.</p>
+
+                            <!-- Project 2 -->
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Personal Terminal</h3>
+                            <p style="margin-bottom: 1rem;">Coded a Bloomberg-style terminal featuring automated portfolio tracking, tax optimization, and IPO tracking.</p>
+
+                            <!-- Project 3 -->
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">NBA Machine Learning</h3>
+                            <p style="margin-bottom: 0.75rem;">Developed machine learning models to predict NBA statistics using Python, Scikit-Learn, and Pandas. Shared deep-dive data analysis on X.</p>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <a href="https://x.com/SwishStatistics/status/1897829282337952232?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 1</a>
+                                <a href="https://x.com/SwishStatistics/status/1887315225461846278?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 2</a>
+                                <a href="https://x.com/SwishStatistics/status/1886600596179812684?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 3</a>
+                                <a href="https://x.com/SwishStatistics/status/1885897198971306109?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 4</a>
+                            </div>
+
+                            <!-- Project 4 -->
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Essay: Public SaaS Stocks</h3>
+                            <p style="margin-bottom: 0.75rem;">In-depth analysis and writing on public SaaS stocks, underlying metrics, and market momentum.</p>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://substack.com/home/post/p-187310474" target="_blank" rel="noopener noreferrer" class="btn primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; background: var(--accent); color: white; border: none;">Read on Substack</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node 11: Contact and Links (Left) -->
+                <div class="timeline-container left reveal">
+                    <div class="timeline-content glow-card contact-card">
+                        <h2>Contact and Links</h2>
+                        <p>Based in Sonoma, CA. Always open to discussing exponential growth and new opportunities in Data and AI.</p>
+                        <div class="btn-group">
+                            <a href="mailto:gavinblanusa@comcast.net" class="btn primary">Email Me</a>
+                            <a href="https://github.com/gavinblanusa" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
+                            <a href="https://www.linkedin.com/in/gavinblanusa/" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
