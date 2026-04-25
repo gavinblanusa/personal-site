@@ -14,7 +14,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (!target) return;
 
         event.preventDefault();
-        target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+        const headerOffset = document.querySelector('.site-header')?.offsetHeight || 0;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset - 18;
+
+        window.scrollTo({ top: Math.max(targetTop, 0), behavior: reducedMotion ? 'auto' : 'smooth' });
         history.pushState(null, '', anchor.getAttribute('href'));
     });
 });

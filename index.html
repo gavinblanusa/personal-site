@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <a href="#hero" class="site-mark">GB</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#featured-work">Work</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
     <!-- Parallax Altitude Backgrounds (Populated via JS) -->
     <div id="bg-manager">
@@ -32,6 +40,24 @@
                 <a href="#featured-work" class="btn primary">View Projects</a>
                 <a href="mailto:gavinblanusa@comcast.net" class="btn secondary">Contact</a>
             </div>
+            <dl class="proof-strip" aria-label="Quick facts">
+                <div>
+                    <dt>GPA</dt>
+                    <dd>3.97</dd>
+                </div>
+                <div>
+                    <dt>Graduating</dt>
+                    <dd>May 2026</dd>
+                </div>
+                <div>
+                    <dt>Current</dt>
+                    <dd>TRAC VC/AI</dd>
+                </div>
+                <div>
+                    <dt>Focus</dt>
+                    <dd>Data + AI</dd>
+                </div>
+            </dl>
         </div>
         
         <div class="scroll-indicator">
@@ -52,22 +78,53 @@
             </div>
 
             <div class="work-grid">
-                <article class="work-card reveal">
+                <article class="work-card featured reveal">
+                    <div class="work-visual terminal-visual" aria-hidden="true">
+                        <span>groq.pipeline</span>
+                        <span>commodities_feed.clean()</span>
+                        <span>signals → summary → desk</span>
+                    </div>
                     <div class="work-meta">AI Workflow</div>
                     <h3>AWS AI Workflow</h3>
                     <p>Built an LLM pipeline via Groq for a commercial futures company focused on trading data for commodities.</p>
+                    <ul class="work-tags">
+                        <li>LLM pipeline</li>
+                        <li>Trading data</li>
+                        <li>Ops workflow</li>
+                    </ul>
                 </article>
 
                 <article class="work-card reveal">
+                    <div class="work-visual market-visual" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="work-meta">Finance Tooling</div>
                     <h3>Personal Terminal</h3>
                     <p>Coded a Bloomberg-style terminal featuring portfolio tracking, tax optimization, and IPO tracking.</p>
+                    <ul class="work-tags">
+                        <li>Portfolio</li>
+                        <li>Tax lots</li>
+                        <li>IPO tracking</li>
+                    </ul>
                 </article>
 
                 <article class="work-card reveal">
+                    <div class="work-visual model-visual" aria-hidden="true">
+                        <span>pts</span>
+                        <span>reb</span>
+                        <span>ast</span>
+                    </div>
                     <div class="work-meta">Machine Learning</div>
                     <h3>NBA Statistical Modeling</h3>
                     <p>Developed predictive NBA models with Python, Scikit-Learn, and Pandas, then published data-driven breakdowns on X.</p>
+                    <ul class="work-tags">
+                        <li>Python</li>
+                        <li>Scikit-Learn</li>
+                        <li>Pandas</li>
+                    </ul>
                     <div class="project-actions">
                         <a href="https://x.com/SwishStatistics/status/1897829282337952232?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary small">Model Breakdown</a>
                         <a href="https://x.com/SwishStatistics/status/1887315225461846278?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary small">Prediction Analysis</a>
@@ -76,9 +133,19 @@
                 </article>
 
                 <article class="work-card reveal">
+                    <div class="work-visual essay-visual" aria-hidden="true">
+                        <span>NRR</span>
+                        <span>FCF</span>
+                        <span>EV/REV</span>
+                    </div>
                     <div class="work-meta">Market Research</div>
                     <h3>Essay: Public SaaS Stocks</h3>
                     <p>In-depth analysis on public SaaS stocks, operating metrics, and market momentum.</p>
+                    <ul class="work-tags">
+                        <li>SaaS metrics</li>
+                        <li>Public markets</li>
+                        <li>Momentum</li>
+                    </ul>
                     <div class="project-actions">
                         <a href="https://substack.com/home/post/p-187310474" target="_blank" rel="noopener noreferrer" class="btn primary small">Read Essay</a>
                     </div>
@@ -88,7 +155,7 @@
     </section>
 
     <!-- Timeline Journey -->
-    <section class="journey-section">
+    <section class="journey-section" id="timeline">
         <div class="container">
             <div class="section-kicker">Timeline</div>
             <div class="section-heading timeline-heading">
@@ -215,22 +282,31 @@
                     </div>
                 </div>
 
-                <!-- Node 11: Contact and Links (Left) -->
-                <div class="timeline-container right reveal">
-                    <div class="timeline-content glow-card contact-card">
-                        <h2>Contact and Links</h2>
-                        <p>Based in Sonoma, CA. Always open to discussing exponential growth and new opportunities in Data and AI.</p>
-                        <div class="btn-group">
-                            <a href="mailto:gavinblanusa@comcast.net" class="btn primary">Email Me</a>
-                            <a href="https://github.com/gavinblanusa" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
-                            <a href="https://www.linkedin.com/in/gavinblanusa/" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container contact-layout">
+            <div>
+                <div class="section-kicker">Contact</div>
+                <h2>Open to data, AI, and venture work with sharp learning curves.</h2>
+            </div>
+            <div class="contact-panel">
+                <p>Based in Sonoma, CA and Dallas, TX. Always open to discussing technical sourcing, market research, investing workflows, and applied AI systems.</p>
+                <div class="btn-group">
+                    <a href="mailto:gavinblanusa@comcast.net" class="btn primary">Email Me</a>
+                    <a href="https://github.com/gavinblanusa" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
+                    <a href="https://www.linkedin.com/in/gavinblanusa/" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span>Gavin Blanusa</span>
+        <a href="#hero">Back to top</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
