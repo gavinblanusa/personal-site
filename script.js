@@ -8,6 +8,17 @@ const timelineProgress = document.getElementById('timeline-progress');
 const journeySection = document.querySelector('.journey-section');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', event => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (!target) return;
+
+        event.preventDefault();
+        target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+        history.pushState(null, '', anchor.getAttribute('href'));
+    });
+});
+
 cards.forEach(card => {
     card.addEventListener('mousemove', e => {
         const rect = card.getBoundingClientRect();
