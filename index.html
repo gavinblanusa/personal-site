@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gavin Blanusa - The Journey</title>
+    <title>Gavin Blanusa - Data, AI, and Venture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,23 +24,70 @@
         <div class="bg-layer" id="bg-peak"></div>
     </div>
     
-    <!-- Hero Particle Canvas -->
-    <canvas id="hero-particles"></canvas>
-    
     <div class="scroll-fade-overlay"></div>
 
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
         <div class="hero-content reveal-on-load">
+            <p class="eyebrow">Data science, AI systems, and venture research</p>
             <h1>Gavin Blanusa</h1>
-            <p class="subtitle">Data Science | Economics | AI | Venture Capital</p>
-            <p class="bio">A highly driven and analytical professional seeking exponential growth and new opportunities in Data and AI.</p>
+            <p class="subtitle">I build analytical systems for sourcing, market research, and investment decision-making.</p>
+            <p class="bio">Economics and data science student at UT Dallas, currently working across venture capital, AI workflows, and technical market analysis.</p>
+            <div class="hero-actions">
+                <a href="#featured-work" class="btn primary">View Projects</a>
+                <a href="mailto:gavinblanusa@comcast.net" class="btn secondary">Contact</a>
+            </div>
         </div>
         
         <div class="scroll-indicator">
-            <span>Begin the Journey</span>
+            <span>Scroll</span>
             <div class="mouse">
                 <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="featured-work" id="featured-work">
+        <div class="container">
+            <div class="section-kicker">Selected Work</div>
+            <div class="section-heading">
+                <h2>Proof before chronology.</h2>
+                <p>Projects that show the blend of data, markets, and applied AI behind the timeline.</p>
+            </div>
+
+            <div class="work-grid">
+                <article class="work-card reveal">
+                    <div class="work-meta">AI Workflow</div>
+                    <h3>AWS AI Workflow</h3>
+                    <p>Built an LLM pipeline via Groq for a commercial futures company focused on trading data for commodities.</p>
+                </article>
+
+                <article class="work-card reveal">
+                    <div class="work-meta">Finance Tooling</div>
+                    <h3>Personal Terminal</h3>
+                    <p>Coded a Bloomberg-style terminal featuring portfolio tracking, tax optimization, and IPO tracking.</p>
+                </article>
+
+                <article class="work-card reveal">
+                    <div class="work-meta">Machine Learning</div>
+                    <h3>NBA Statistical Modeling</h3>
+                    <p>Developed predictive NBA models with Python, Scikit-Learn, and Pandas, then published data-driven breakdowns on X.</p>
+                    <div class="project-actions">
+                        <a href="https://x.com/SwishStatistics/status/1897829282337952232?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary small">Model Breakdown</a>
+                        <a href="https://x.com/SwishStatistics/status/1887315225461846278?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary small">Prediction Analysis</a>
+                        <a href="https://x.com/SwishStatistics/status/1886600596179812684?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary small">Data Thread</a>
+                    </div>
+                </article>
+
+                <article class="work-card reveal">
+                    <div class="work-meta">Market Research</div>
+                    <h3>Essay: Public SaaS Stocks</h3>
+                    <p>In-depth analysis on public SaaS stocks, operating metrics, and market momentum.</p>
+                    <div class="project-actions">
+                        <a href="https://substack.com/home/post/p-187310474" target="_blank" rel="noopener noreferrer" class="btn primary small">Read Essay</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -48,6 +95,11 @@
     <!-- Timeline Journey -->
     <section class="journey-section">
         <div class="container">
+            <div class="section-kicker">Timeline</div>
+            <div class="section-heading timeline-heading">
+                <h2>The path so far.</h2>
+                <p>A concise map of the experiences that shaped the work above.</p>
+            </div>
             <div class="timeline">
                 <div class="timeline-progress" id="timeline-progress"></div>
 
@@ -85,7 +137,7 @@
                 <div class="timeline-container left reveal">
                     <div class="timeline-content glow-card">
                         <h2>Transformative Books</h2>
-                        <ul class="project-list" style="margin-top: 1rem;">
+                        <ul class="project-list influence-list">
                             <li><strong>The Beginning of Infinity</strong> by David Deutsch</li>
                             <li><strong>Atomic Habits</strong> by James Clear</li>
                             <li><strong>The Black Swan</strong> by Nassim Taleb</li>
@@ -101,7 +153,7 @@
                 <div class="timeline-container right reveal">
                     <div class="timeline-content glow-card">
                         <h2>Daily Podcasts</h2>
-                        <p style="margin-top: 1rem; line-height: 1.8;">
+                        <p class="influence-copy">
                             Lex Fridman • Founders • All-In • 20VC • Modern Wisdom • Dwarkesh Podcast • Last Week in AI • Huberman Lab • Invest Like the Best • Tim Ferriss
                         </p>
                     </div>
@@ -168,42 +220,8 @@
                     </div>
                 </div>
 
-                <!-- Phase 3: Projects & CTAs -->
-                <!-- Node 10: Technical Projects (Right) -->
-                <div class="timeline-container right reveal">
-                    <div class="timeline-content glow-card" style="background: rgba(139, 92, 246, 0.05); border-color: rgba(139, 92, 246, 0.2);">
-                        <h2>Projects & Builder's Mindset</h2>
-                        <div style="margin-top: 1.5rem;">
-                            <!-- Project 1 -->
-                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">AWS AI Workflow</h3>
-                            <p style="margin-bottom: 1rem;">Built an LLM pipeline via Groq for a commercial futures company focused on trading data for commodities.</p>
-
-                            <!-- Project 2 -->
-                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Personal Terminal</h3>
-                            <p style="margin-bottom: 1rem;">Coded a Bloomberg-style terminal featuring automated portfolio tracking, tax optimization, and IPO tracking.</p>
-
-                            <!-- Project 3 -->
-                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">NBA Machine Learning</h3>
-                            <p style="margin-bottom: 0.75rem;">Developed machine learning models to predict NBA statistics using Python, Scikit-Learn, and Pandas. Shared deep-dive data analysis on X.</p>
-                            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.5rem;">
-                                <a href="https://x.com/SwishStatistics/status/1897829282337952232?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 1</a>
-                                <a href="https://x.com/SwishStatistics/status/1887315225461846278?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 2</a>
-                                <a href="https://x.com/SwishStatistics/status/1886600596179812684?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 3</a>
-                                <a href="https://x.com/SwishStatistics/status/1885897198971306109?s=20" target="_blank" rel="noopener noreferrer" class="btn secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">X Post 4</a>
-                            </div>
-
-                            <!-- Project 4 -->
-                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Essay: Public SaaS Stocks</h3>
-                            <p style="margin-bottom: 0.75rem;">In-depth analysis and writing on public SaaS stocks, underlying metrics, and market momentum.</p>
-                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                <a href="https://substack.com/home/post/p-187310474" target="_blank" rel="noopener noreferrer" class="btn primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; background: var(--accent); color: white; border: none;">Read on Substack</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Node 11: Contact and Links (Left) -->
-                <div class="timeline-container left reveal">
+                <div class="timeline-container right reveal">
                     <div class="timeline-content glow-card contact-card">
                         <h2>Contact and Links</h2>
                         <p>Based in Sonoma, CA. Always open to discussing exponential growth and new opportunities in Data and AI.</p>
