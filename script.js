@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const cards = document.querySelectorAll('.glow-card');
 const revealElements = document.querySelectorAll('.reveal');
 const bgManager = document.getElementById('bg-manager');

@@ -501,27 +501,25 @@ a {
     box-shadow: 0 18px 45px rgba(31, 38, 32, 0.11);
 }
 
-.reveal {
-    opacity: 0;
-    transition: opacity 650ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1);
+.js .reveal {
+    opacity: 1;
+    transition: transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.timeline-container.left.reveal {
+.js .timeline-container.left.reveal {
     transform: translateX(-34px);
 }
 
-.timeline-container.right.reveal {
+.js .timeline-container.right.reveal {
     transform: translateX(34px);
 }
 
-.work-card.reveal {
+.js .work-card.reveal {
     transform: translateY(24px);
 }
 
-.timeline-container.reveal.active,
-.work-card.reveal.active {
-    opacity: 1;
+.js .timeline-container.reveal.active,
+.js .work-card.reveal.active {
     transform: translateX(0) translateY(0);
 }
 
@@ -622,12 +620,12 @@ a {
         left: 18px;
     }
     
-    .timeline-container.left.reveal,
-    .timeline-container.right.reveal {
+    .js .timeline-container.left.reveal,
+    .js .timeline-container.right.reveal {
         transform: translateY(24px);
     }
     
-    .timeline-container.reveal.active {
+    .js .timeline-container.reveal.active {
         transform: translateY(0);
     }
 }
