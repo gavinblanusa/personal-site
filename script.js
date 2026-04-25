@@ -73,11 +73,3 @@ function updateTimeline() {
 window.addEventListener('scroll', updateTimeline, { passive: true });
 window.addEventListener('resize', updateTimeline);
 updateTimeline();
-
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    if (!preloader) return;
-
-    preloader.style.opacity = '0';
-    preloader.style.visibility = 'hidden';
-});
