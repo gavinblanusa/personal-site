@@ -633,6 +633,19 @@ a {
     color: var(--ink);
 }
 
+.timeline-content h3 a {
+    text-decoration-color: rgba(43, 83, 72, 0.35);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.timeline-content h3 a:hover,
+.timeline-content h3 a:focus-visible {
+    color: var(--accent-dark);
+    text-decoration-color: currentColor;
+}
+
 .timeline-content p,
 .project-list li {
     color: var(--ink-muted);
